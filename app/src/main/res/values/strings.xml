@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+
+    <string name="year">Год:</string>
+    <string name="rating">Рейтинг:</string>
+    <string name="moving_list">Список фильмов</string>
+    <string name="genres">Жанр:</string>
+
+</resources>
