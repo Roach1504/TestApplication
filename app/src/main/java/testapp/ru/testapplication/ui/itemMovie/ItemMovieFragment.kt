@@ -23,7 +23,7 @@ class ItemMovieFragment : Fragment(R.layout.item_movie_fragment) {
         parametersOf(args.id)
     }
 
-    var onSetTitle: ISetTitle? = null
+    private var onSetTitle: ISetTitle? = null
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -60,5 +60,10 @@ class ItemMovieFragment : Fragment(R.layout.item_movie_fragment) {
             .placeholder(R.mipmap.image_not_found)
             .error(R.mipmap.image_not_found)
             .into(imageView_poster)
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        onSetTitle= null
     }
 }
